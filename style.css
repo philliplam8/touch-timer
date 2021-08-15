@@ -1,0 +1,12 @@
+#color-display {
+    height: 200px;
+    width: 200px;
+    border: 2px solid grey;
+    margin: 10px 0;
+
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
