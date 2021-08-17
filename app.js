@@ -1,4 +1,5 @@
 const displayBox = document.getElementById("color-display");
+const body = document.getElementsByTagName("body")[0];
 var firstClick = false;
 var t1;
 var t2;
@@ -53,7 +54,7 @@ function main() {
         console.log("First click, new timer");
         firstClick = true;
         t1 = new Date();
-        displayBox.style.backgroundColor = "#81b29a";
+        body.style.backgroundColor="#81b29a";
 
         myTimer = setInterval(function () {
 
@@ -70,7 +71,11 @@ function main() {
     else {
         console.log("second click, stopping timer");
         clearInterval(myTimer);
-        displayBox.style.backgroundColor = "#e07a5f";
+        body.style.backgroundColor = "#e07a5f";
         firstClick = false;
     }
 }
+
+window.addEventListener("click", function(event) {
+    main();
+});
