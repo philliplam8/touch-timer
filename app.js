@@ -64,6 +64,7 @@ function main() {
             
             // Update UI
             displayBox.innerHTML = differenceSeconds;
+            document.title = "Touch Timer - " + differenceSeconds + "s";
 
         }, 10); // calculation & update happens every 10 milliseconds
     }
